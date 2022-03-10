@@ -1,0 +1,207 @@
+.Home-container {
+    height: 100vh;
+    width: 100%;
+    margin-top: -35px;
+    background-color: #24305e;
+    padding-bottom: 100px;
+}
+
+.tag-line {
+    text-align: center;
+    padding-top: 180px;
+}
+
+.tag-line h1 {
+    color: #A8D0E6;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.tag-details {
+    text-align: center;
+    color: orange;
+    font-size: 17px;
+}
+
+.Home-container .find-container {
+    height: auto;
+    margin: auto;
+    width: 70%;
+    border: 2px solid;
+    border-color: #A8D0E6;
+    background-color: #25274D;
+    border-radius: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 5px 9px 20px -4px rgba(52, 107, 170, 0.66);
+}
+
+.search-head {
+    color: #A8D0E6;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.search-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.text-1 input {
+    height: 30px;
+    width: 450px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.text-1 input:hover {
+    cursor: pointer;
+    box-shadow: 5px 9px 20px -4px rgba(30, 78, 133, 0.66);
+}
+
+.text-2 input {
+    height: 30px;
+    width: 400px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.text-2 input:hover {
+    cursor: pointer;
+    box-shadow: 5px 9px 20px -4px rgba(30, 78, 133, 0.66);
+}
+
+.submit-search button {
+    height: 45px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: darkorange;
+    outline: #A8D0E6;
+    color: #25274D;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-search button:hover {
+    cursor: pointer;
+    box-shadow: inset 5px 9px 20px -4px rgba(245, 98, 0, 0.66);
+}
+
+@media only screen and (max-width: 1350px) {
+    .text-1 input {
+        width: 350px;
+    }
+    .text-2 input {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .text-1 input {
+        width: 250px;
+    }
+    .text-2 input {
+        width: 250px;
+    }
+}
+  
+@media only screen and (max-width: 1130px) {
+    .text-1 input {
+        width: 300px;
+    }
+    .text-2 input {
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .text-1 input {
+        width: 250px;
+    }
+    .text-2 input {
+        width: 200px;
+    }
+}
+  
+@media only screen and (max-width: 950px) {
+    .search-panel {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-1 input {
+        width: 400px;
+        margin: 5px;
+    }
+    .text-2 input {
+        width: 400px;
+        margin: 5px;
+    }
+    .submit-search button{
+        margin: 5px;
+    }
+}
+  
+  
+@media only screen and (max-width: 700px) {
+    .search-panel {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-1 input {
+        width: 300px;
+        margin: 5px;
+    }
+    .text-2 input {
+        width: 300px;
+        margin: 5px;
+    }
+    .submit-search button{
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .search-panel {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-1 input {
+        width: 250px;
+        margin: 5px;
+    }
+    .text-2 input {
+        width: 250px;
+        margin: 5px;
+    }
+    .submit-search button{
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .search-panel {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-1 input {
+        width: 170px;
+        margin: 5px;
+    }
+    .text-2 input {
+        width: 170px;
+        margin: 5px;
+    }
+    .submit-search button{
+        margin: 5px;
+    }
+}

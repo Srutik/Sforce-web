@@ -1,0 +1,251 @@
+.navbar-container {
+  position: sticky;
+  top: 0px;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  color: #a8d0e6;
+  background-color: #25274d;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 5px 2px 20px -4px rgba(52, 107, 170, 0.66);
+}
+
+.nav-logo {
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: -10px;
+  padding: 0 200px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  color: #a8d0e6;
+  letter-spacing: 3px;
+
+  /* background: #A8D0E6;
+  background: -webkit-linear-gradient(to right, #A8D0E6 0%, #2d567e 77%);
+  background: -moz-linear-gradient(to right, #A8D0E6 0%, #2d567e  77%);
+  background: linear-gradient(to right, #A8D0E6 0%, #2d567e  77%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.nav-logo .logo1 {
+  color: orange;
+  margin-bottom: 2px;
+  border-bottom: #a8d0e6 solid 3px;
+}
+
+.nav-logo .logo2 {
+  margin-bottom: 2px;
+  border-bottom: orange solid 3px;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 20px;
+  list-style: none;
+  margin-right: 200px;
+}
+
+.nav-item {
+  margin: auto;
+}
+
+.nav-contact-item {
+  height: 40px;
+  width: 150px;
+  margin: auto;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: darkorange;
+}
+
+.nav-contact-item:hover {
+  cursor: pointer;
+  box-shadow: inset 5px 9px 20px -4px rgba(245, 98, 0, 0.66);
+
+}
+
+.nav-contact-item .nav-contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  margin: 8px 0;
+  text-decoration: none;
+  color: #25274d;
+  transition: 0.3s all;
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #a8d0e6;
+  transition: 0.3s all;
+  margin: 0 40px;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  font-weight: 600;
+  color: #2e9cca;
+}
+
+.nav-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1270px) {
+  .nav-logo {
+    padding: 20px 150px;
+  }
+
+  .nav-links {
+    padding: 20px 0px;
+    margin-right: 150px;
+  }
+
+  .nav-link {
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .nav-logo {
+    padding: 20px 120px;
+  }
+
+  .nav-links {
+    padding: 20px 0px;
+    margin-right: 120px;
+  }
+
+  .nav-link {
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .nav-logo {
+    padding: 20px 100px;
+  }
+
+  .nav-links {
+    padding: 20px 0px;
+    margin-right: 100px;
+  }
+
+  .nav-link {
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .nav-logo {
+    padding: 20px 80px;
+  }
+
+  .nav-links {
+    padding: 20px 0px;
+    margin-right: 80px;
+  }
+
+  .nav-link {
+    margin: 0 5px;
+  }
+
+  .nav-contact-item {
+    height: 40px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-logo {
+    padding: 20px 40px;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s all;
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .nav-links.active {
+    background-color: #25274d;
+    box-shadow: 2px 7px 19px -4px rgba(255, 255, 255, 0.66);
+    left: 0;
+    padding: 30px 0;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+    /* border-top: 1px solid red;
+    border-bottom: 1px solid red; */
+  }
+
+  .nav-icon {
+    display: block;
+    margin: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-logo {
+    padding: 20px 30px;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s all;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links.active {
+    background-color: #25274d;
+    box-shadow: 2px 7px 19px -4px rgba(255, 255, 255, 0.66);
+    left: 0;
+    padding: 30px 0;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+    /* border-top: 1px solid red;
+    border-bottom: 1px solid red; */
+  }
+
+  .nav-icon {
+    display: block;
+    margin: 30px;
+  }
+}
